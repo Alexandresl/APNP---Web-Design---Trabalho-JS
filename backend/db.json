@@ -1,19 +1,19 @@
 {
-  "products": [
+  "alunos": [
     {
       "id": 1,
-      "name": "Caneta BIC preta",
-      "price": 5.89
+      "name": "Benedito Levi Emanuel da Cruz",
+      "registration": "76042350340"
     },
     {
       "id": 2,
-      "name": "Notebook Mac",
-      "price": 12000.89
+      "name": "Bárbara Isabelle Monteiro",
+      "registration": "92098031912"
     },
     {
       "id": 3,
-      "name": "Sansung S20+",
-      "price": 5000.89
+      "name": "Mariane Sandra Santos",
+      "registration": "96942944793"
     }
   ]
 }
