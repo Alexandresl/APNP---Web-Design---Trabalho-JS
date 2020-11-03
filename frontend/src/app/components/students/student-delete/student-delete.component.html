@@ -1,21 +1,23 @@
 <mat-card>
     <mat-card-title>
-        Novo Aluno
+        Confirmar exclusão do aluno
     </mat-card-title>
     <form>
         <mat-form-field>
             <input matInput placeholder="Nome" 
-                    [(ngModel)]="student.name"
-                    name="name">
+                    [value]="student.name"
+                    name="name"
+                    disabled>
         </mat-form-field>
         <mat-form-field>
             <input matInput placeholder="Matrícula"
-                [(ngModel)]="student.registration"
-                name="registration">
+                [value]="student.registration"
+                name="registration"
+                disabled>
         </mat-form-field>
     </form>
-    <button mat-raised-button (click)="createStudent()" color="primary">
-        Salvar
+    <button mat-raised-button (click)="deleteStudent()" color="warn">
+        Excluir
     </button>
     <button mat-raised-button (click)="cancel()">
         Cancelar

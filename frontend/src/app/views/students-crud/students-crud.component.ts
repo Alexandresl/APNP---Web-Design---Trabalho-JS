@@ -1,3 +1,4 @@
+import { HeaderService } from './../../components/template/header/header.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -8,12 +9,18 @@ import { Router } from '@angular/router';
 })
 export class StudentsCrudComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private headerService: HeaderService) {
+    headerService.headerDate = {
+      title: 'Cadastro de Alunos',
+      icon: 'home',
+      routeUrl: '/students'
+    }
+  }
 
   ngOnInit(): void {
   }
 
-  navegateToProductCreate(): void {
+  navegateToStudentCreate(): void {
     this.router.navigate(['/students/create']);
   }
 
